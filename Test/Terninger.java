@@ -1,7 +1,7 @@
 package Test;
 
 import java.util.Scanner;
-import java.util.Random;
+
 import java.lang.Math;
 public class Terninger {
 
@@ -11,19 +11,16 @@ public class Terninger {
             Scanner input = new Scanner(System.in);
 
             System.out.println("Skriv første spillers navn");
-            Scanner scan;
             String navn1 = input.nextLine();
             System.out.println("Skriv anden spillers navn");
             String navn2 = input.nextLine();
 
-            int n;
             int min=1;
             int max=6;
             int t=0;
-            int[] spiller1=new int[2];
             int to= 0;
             int to2= 0;
-            int d=0;
+
             while (to2<40 && to<40) {
                 int d1 = (int) (Math.random() * (max - min + 1) + min);
                 int d2 = (int) (Math.random() * (max - min + 1) + min);
@@ -50,10 +47,12 @@ public class Terninger {
 
                 }
                 if (to>=40){
-                    System.out.println(navn1 + " vandt");
+                    System.out.println(navn1 + " vandt med "+ to);
+                    System.out.println(navn2+ " endte med " + to2);
                 }
                 if (to2>=40){
-                    System.out.println(navn2 +" vandt");
+                    System.out.println(navn2 +" vandt med " +to2);
+                    System.out.println(navn1+ " endte med "+ to);
                 }
 
 
