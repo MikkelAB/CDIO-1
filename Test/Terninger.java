@@ -9,6 +9,13 @@ public class Terninger {
 
 
             Scanner input = new Scanner(System.in);
+
+            System.out.println("Skriv første spillers navn");
+            Scanner scan;
+            String navn1 = input.nextLine();
+            System.out.println("Skriv anden spillers navn");
+            String navn2 = input.nextLine();
+
             int n;
             int min=1;
             int max=6;
@@ -43,10 +50,10 @@ public class Terninger {
 
                 }
                 if (to>=40){
-                    System.out.println("Spiller 1 vandt");
+                    System.out.println(navn1 + " vandt");
                 }
                 if (to2>=40){
-                    System.out.println("Spiller 2 vandt");
+                    System.out.println(navn2 +" vandt");
                 }
 
 
