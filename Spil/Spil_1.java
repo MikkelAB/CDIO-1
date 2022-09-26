@@ -33,7 +33,10 @@ public class Spil_1 {
                 System.out.println(d2);
                 //Summen af terningerne er s
                 int s = d1 + d2;
-                System.out.println(s+ " er summen af terningerne");
+
+                if (s!=2) {
+                    System.out.println(s + " er summen af terningerne");
+                }
 
 
                 if (t==0){
@@ -43,9 +46,11 @@ public class Spil_1 {
                     //Hvis man slå to 1 bliver total 0
                     if (s==2){
                         to=0;
+                        System.out.println("du slog desværre dobbelt 1 og har defor 0 points");
                     }
                     System.out.println(to + " er " + navn1 + " total");
                     t=1;
+                    System.out.println("Nu er det " + navn2 + "s tur");
 
                 }
                 else if (t==1){
@@ -57,6 +62,7 @@ public class Spil_1 {
                     }
                     System.out.println(to2 + " er " + navn2 + " total");
                     t=0;
+                    System.out.println("Nu er det " + navn1 + "s tur");
 
                 }
                 if (to>=40){

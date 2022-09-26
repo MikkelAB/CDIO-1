@@ -45,6 +45,7 @@ public class Spil {
                 to=s+to;
                 System.out.println(to + " er " + navn1 + " total");
                 t=1;
+                System.out.println("Nu er det " + navn2 + "s tur");
 
             }
             else if (t==1){
@@ -53,6 +54,7 @@ public class Spil {
 
                 System.out.println(to2+ " er " + navn2+ " total");
                 t=0;
+                System.out.println("Nu er det " + navn1 + "s tur");
 
             }
             if (to>=40){
