@@ -35,10 +35,6 @@ public class Spil {
             if (t==0){
                 //Spiller 1 = total
                 to=s+to;
-
-                if (s==2){
-                    to=0;
-                }
                 System.out.println(to);
                 t=1;
 
@@ -46,9 +42,7 @@ public class Spil {
             else if (t==1){
                 //Spiller 2 = total
                 to2=s+to2;
-                if (s==2){
-                    to=0;
-                }
+
                 System.out.println(to2);
                 t=0;
 
