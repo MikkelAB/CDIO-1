@@ -21,6 +21,12 @@ public class Spil_2 {
 
         while (true) {
             while (to2 < 40 && to < 40) {
+                int x=0;
+                while (x!=32){
+                    System.out.println("klik space og enter for at slå");
+                    char z = input.nextLine().charAt(0);
+                    x = z;
+                }
                 int d1 = (int) (Math.random() * (max - min + 1) + min);
                 int d2 = (int) (Math.random() * (max - min + 1) + min);
                 //Terningerne har d1 og d2
@@ -28,7 +34,7 @@ public class Spil_2 {
                 System.out.println(d2);
                 //Summen af terningerne er s
                 int s = d1 + d2;
-                System.out.println(s);
+                System.out.println(s + " er summen af terningerne");
 
 
                 if (t == 0) {
@@ -42,9 +48,10 @@ public class Spil_2 {
                     }
                     //Hvis man slå to ens terninger får man en tur mere
                     if (d1==d2){
+                        System.out.println(to + " er " + navn1 + "s total");
                         break;
                     }
-                    System.out.println(to);
+                    System.out.println(to + " er " + navn1 + "s total");
                     t = 1;
 
 
@@ -53,14 +60,15 @@ public class Spil_2 {
                     to2 = s + to2;
                     //Hvis man slår to 1 bliver total 0
                     if (s == 2) {
-                        to = 0;
+                        to2 = 0;
                         break;
                     }
                     //Hvis man slår to ens terninger får man en tur mere
                     if (d1==d2){
+                        System.out.println(to2 + " er " + navn2 + "s total");
                         break;
                     }
-                    System.out.println(to2);
+                    System.out.println(to2 + " er " + navn2 + "s total");
                     t = 0;
 
                 }

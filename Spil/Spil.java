@@ -37,7 +37,7 @@ public class Spil {
             System.out.println(d2);
             //Summen af terningerne er s
             int s = d1 + d2;
-            System.out.println(s);
+            System.out.println(s+ " er summen af terningerne");
 
 
             if (t==0){
