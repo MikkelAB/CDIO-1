@@ -1,5 +1,6 @@
 package Spil;
 
+import java.util.Objects;
 import java.util.Scanner;
 
 import java.lang.Math;
@@ -22,6 +23,13 @@ public class Spil {
         int to2= 0;
 
         while (to2<40 && to<40) {
+            int x=0;
+            while (x!=32){
+                System.out.println("klik space og enter for at slå");
+                char z = input.nextLine().charAt(0);
+                x = z;
+            }
+
             int d1 = (int) (Math.random() * (max - min + 1) + min);
             int d2 = (int) (Math.random() * (max - min + 1) + min);
             //Terningerne har d1 og d2
@@ -35,7 +43,7 @@ public class Spil {
             if (t==0){
                 //Spiller 1 = total
                 to=s+to;
-                System.out.println(to);
+                System.out.println(to + " er " + navn1 + " total");
                 t=1;
 
             }
@@ -43,7 +51,7 @@ public class Spil {
                 //Spiller 2 = total
                 to2=s+to2;
 
-                System.out.println(to2);
+                System.out.println(to2+ " er " + navn2+ " total");
                 t=0;
 
             }
