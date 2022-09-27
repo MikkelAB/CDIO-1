@@ -32,12 +32,12 @@ public class Spil_3 {
                 int d2 = (int) (Math.random() * (max - min + 1) + min);
 
                 //Terningerne har d1 og d2
-                System.out.println("Første terning viser" + d1+ "øjne");
-                System.out.println("Anden terning viser" +d2 + "øjne");
+                System.out.println("Første terning viser " + d1+ " øjne");
+                System.out.println("Anden terning viser " +d2 + " øjne");
                 //Summen af terningerne er s
                 int s = d1 + d2;
                 if (s != 2) {
-                    System.out.println("Summen af terningerne er" +s );
+                    System.out.println("Summen af terningerne er " +s );
                 }
 
 
