@@ -35,7 +35,7 @@ public class Terninger {
                 if (t==0){
                     //Spiller 1 = total
                     to=s+to;
-
+                    //Den totale sum kan kun blive 2 hvis begge terninger slår 1
                     if (s==2){
                         to=0;
                     }
@@ -45,6 +45,7 @@ public class Terninger {
                 }
                 else if (t==1){
                     to2=s+to2;
+                    //Den totale sum kan kun blive 2 hvis begge terninger slår 1
                     if (s==2){
                         to=0;
                     }
