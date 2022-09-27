@@ -20,7 +20,7 @@ public class Spil_4 { public static void main(String[] args) {
     int six = 0;
 
     while (true) {
-        while (to2 < 400 && to < 400) {
+        while (to2 < 4000 && to < 4000) {
             int x = 0;
             while (x != 32) {
                 System.out.println("klik space og enter for at slå");
@@ -45,6 +45,7 @@ public class Spil_4 { public static void main(String[] args) {
             if (t == 0) {
                 //Spiller 1 = total
                 to = s + to;
+
 
                 //Hvis man slå to 1 bliver total 0
                 if (s == 2) {
