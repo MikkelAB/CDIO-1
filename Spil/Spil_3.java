@@ -25,8 +25,10 @@ public class Spil_3 {
                 int x = 0;
                 while (x != 32) {
                     System.out.println("klik space og enter for at slå");
+
                     char z = input.nextLine().charAt(0);
                     x = z;
+
                 }
                 int d1 = (int) (Math.random() * (max - min + 1) + min);
                 int d2 = (int) (Math.random() * (max - min + 1) + min);
