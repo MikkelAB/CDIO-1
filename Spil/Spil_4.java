@@ -55,7 +55,8 @@ public class Spil_4 { public static void main(String[] args) {
                 }
                 //Spilleren vinder når man slår to ens og man er over 40 points
                 if (to>40 && d1==d2){
-                    System.out.println("Tilykke "+ navn1 + " Vinder");
+                    System.out.println("Tilykke "+ navn1 + " Vinder med "+to);
+
                     System.exit(1);
                 }
 
