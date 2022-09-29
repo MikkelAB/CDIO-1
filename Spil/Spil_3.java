@@ -104,6 +104,7 @@ public class Spil_3 {
                     }
                     //Hvis man slår to ens terninger får man en tur mere
                     if (d1 == d2){
+                        System.out.println( TEXT_BLUE+navn2 +TEXT_RESET+ "s total er "+GREEN_BOLD+to2);
                         //Hvis man slår dobbelt 6
                         if (s == 12) {
                             six = six + 1;
