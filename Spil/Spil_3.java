@@ -77,6 +77,11 @@ public class Spil_3 {
                                 System.out.println(RED_BOLD+"Tilykke spiller " +TEXT_RED+ navn1 + RED_BOLD+" har vundet!");
                                 System.exit(1);
                             }
+                            if (to >= 40) {
+                                System.out.println(TEXT_RED+navn1 +TEXT_RESET+ " vandt med " + GREEN_BOLD+to);
+                                System.out.println(TEXT_BLUE+navn2 + TEXT_RESET+" endte med " + GREEN_BOLD+to2);
+                                System.exit(1);
+                            }
                             System.out.println(TEXT_RED+navn1+RED_BOLD+" slog to 6, hvis dit næste slag er det samme vinder du");
                             break;
                         }
@@ -104,6 +109,11 @@ public class Spil_3 {
                             six = six + 1;
                             if (six == 2) {
                                 System.out.println(RED_BOLD+"Tilykke spiller " + TEXT_BLUE+navn2 +RED_BOLD+ " har vundet!");
+                                System.exit(1);
+                            }
+                            if (to2 >= 40) {
+                                System.out.println(TEXT_RED+navn1 +TEXT_RESET+ " vandt med " + GREEN_BOLD+to);
+                                System.out.println(TEXT_BLUE+navn2 + TEXT_RESET+" endte med " + GREEN_BOLD+to2);
                                 System.exit(1);
                             }
                             System.out.println(TEXT_BLUE+navn2+RED_BOLD+" slog to 6, hvis dit næste slag er det samme vinder du");
